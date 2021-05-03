@@ -7,9 +7,6 @@
 
 
 @media screen and (max-width: 768px){
-    main {
-        margin: 10px;
-    }
 
     #contact_form {
         margin-bottom: 50px;
@@ -50,9 +47,14 @@
         margin-bottom: 20px;
     }
 
+    .social_border {
+        border-bottom: 1px black solid;
+    }
+
     .form_container h3 {
         text-align: center;
-        padding-bottom: 18px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         
     }
     
@@ -67,38 +69,54 @@
     }
     
     input[type="text"] {
-        height: 40px;
-        font-size:25px;
+        height: 30px;
+        font-size: 16px;
         border-radius: 10px;
         width: 100%;
         border: none;
+        outline: none;
+    }
 
+    textarea {
+        height: 80px;
+        font-size: 16px;
+        border-radius: 10px;
+        width: 100%;
+        border: none;
+        resize: none;
+        outline: none;
     }
     
     label {
         display: block;
         color: var(--main-black);
         font-weight: 600;
+        margin-top: 15px;
     }
 
     input.message {
         height: 40px;
     }
     
-    button {
+    #submitF {
         margin-top: 20px;
         color: var(--main-black);
         background: var(--main-blue);
         list-style: none;
         text-decoration: none;
         border: none;
-        height: 25px;
+        height: 40px;
         width: 100%;
+        border-radius: 10px;
+        font-size:20px
     }
 
     .formError {
         display: none;
         color: var(--main-red);
-
+        border: 1px solid rgb(255, 0, 0);
+        background-color: rgb(255, 177, 177);
+        border-radius: 10px;
+        margin-top: 10px;
     }
 }

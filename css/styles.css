@@ -1,5 +1,5 @@
 :root {
-    --main-blue: rgb(100, 100, 255);
+    --main-blue: #5959ff;
     --main-white: white;
     --main-black: black;
     --main-grey: rgb(219, 219, 219);
@@ -19,9 +19,13 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+main {
+    margin: 25px;
+}
+
 nav {
     height: 10vh;
-    background: rgb(100, 100, 255)
+    background: rgb(100, 100, 255);
 }
 
 .nav-links {
@@ -65,6 +69,13 @@ nav {
 
 @media screen and (max-width:768px) {
 
+    /*--------------------NAV BAR FOR ALL PAGES--------------------*/
+
+    .logo {
+        display: flex;
+        margin: 0 auto;
+    }
+
     .line {
         width: 30px;
         height: 3px;
@@ -74,7 +85,7 @@ nav {
 
     nav {
         position: relative;
-        height: 12vh;
+        height: 100%;
     }
 
     .hamburger_menu {
@@ -90,15 +101,101 @@ nav {
         height: 100vh;
         width: 100%;
         flex-direction: column;
-        clip-path: circle(100px at 2% -20%);
-        -webkit-clip-path: circle(100px at 2% -20%);
-        transition: all 1s ease-out;
+        clip-path: circle(100px at 2% -35%);
+        -webkit-clip-path: circle(100px at 2% -35%);
+        transition: all 1.5s ease-out;
+    }
+
+    .nav-links li a {
+        font-size: 40px;
+        text-transform: uppercase;      
     }
 
     .nav-links.open {
-        clip-path: circle(1500px at 2% -20%);
-        -webkit-clip-path: circle(1500px at 2% -20%);
+        clip-path: circle(1500px at 2% -35%);
+        -webkit-clip-path: circle(1500px at 2% -35%);
     }
+
+    /*--------------------INDEX--------------------*/
+
+    html {
+    }
+
+    /*--------------------BLOG POSTS--------------------*/
+
+    /*--------------------ABOUT ME--------------------*/
+
+    .aboutme_form {
+        background: var(--main-grey);
+        border-radius: 10px;
+        height: 100%;
+    }
+
+    .aboutme_form h1 {
+        text-align: center;
+        padding-top: 20px;
+        margin: 20px;
+    }
+
+    .aboutme_form p {
+        text-align: center;
+        margin: 20px;
+        padding-bottom: 20px;
+    }
+
+    .about_border {
+        border-bottom: 2px solid black;
+        margin: 10px;
+    }
+
+    #aboutme_gif {
+        width: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /*-----------------------FOOTER-----------------------*/
 
@@ -109,7 +206,7 @@ nav {
     .footer_social_container {
         width: 100%;
         text-align: center;
-        padding-top: 10px;
+        padding-top: 20px;
         padding-bottom: 10px;
     }
 
