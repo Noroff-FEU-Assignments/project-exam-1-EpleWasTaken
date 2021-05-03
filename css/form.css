@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@media screen and (max-width: 768px){
+
+    #contact_form {
+        margin-bottom: 50px;
+    }
+
+    .form_container h1 {
+        text-align: center;
+    }
+
+    .form_container h2 {
+        margin-top: 10px;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .githubContact {
+        color: var(--main-github);
+        font-size: 40px;
+    }
+
+    .discordContact {
+        color: var(--main-discord);
+        font-size: 40px;
+    }
+
+    .twitterContact {
+        color: var(--main-twitter);
+        font-size: 40px;
+    }
+
+    .contact_form_social {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .social_border {
+        border-bottom: 1px black solid;
+    }
+
+    .form_container h3 {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+    
+    form {
+        padding: 20px;
+        max-width: 800px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        background: var(--main-grey);
+        border-radius: 10px;
+    }
+    
+    input[type="text"] {
+        height: 30px;
+        font-size: 16px;
+        border-radius: 10px;
+        width: 100%;
+        border: none;
+        outline: none;
+    }
+
+    textarea {
+        height: 80px;
+        font-size: 16px;
+        border-radius: 10px;
+        width: 100%;
+        border: none;
+        resize: none;
+        outline: none;
+    }
+    
+    label {
+        display: block;
+        color: var(--main-black);
+        font-weight: 600;
+        margin-top: 15px;
+    }
+
+    input.message {
+        height: 40px;
+    }
+    
+    #submitF {
+        margin-top: 20px;
+        color: var(--main-black);
+        background: var(--main-blue);
+        list-style: none;
+        text-decoration: none;
+        border: none;
+        height: 40px;
+        width: 100%;
+        border-radius: 10px;
+        font-size:20px
+    }
+
+    .formError {
+        display: none;
+        color: var(--main-red);
+        border: 1px solid rgb(255, 0, 0);
+        background-color: rgb(255, 177, 177);
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+}
