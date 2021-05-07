@@ -13,29 +13,34 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
     font-family: "Roboto", sans-serif;
 }
 
 main {
-    margin: 25px;
+    margin: 20px;
 }
 
+    /*--------------------NAV BAR FOR ALL PAGES--------------------*/
+
 nav {
-    height: 10vh;
-    background: rgb(100, 100, 255);
+    background: var(--main-blue);
+    height: 100%;
 }
 
 .nav-links {
     display: flex;
+    position: fixed;
     list-style: none;
-    width: 50%;
-    height: 100%;
+    height: 100vh;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
     margin-left: auto;
+    background: var(--main-blue);
+    flex-direction: column;
+    clip-path: circle(100px at 2% -35%);
+    -webkit-clip-path: circle(100px at 2% -35%);
+    transition: all 1.5s ease-out;
 }
 
 .nav-links li a {
@@ -44,16 +49,117 @@ nav {
     font-size: 20px;
 }
 
-@media screen and (max-width:1024px) {
-    nav {
-        height: 10vh;
-        background: var(--main-blue);
+.hamburger_menu {
+    position: absolute;
+    cursor: pointer;
+    padding: 20px;
+    z-index: 2;
+}
+
+.hamburger_menu.open {
+    position: fixed;
+}
+
+.logo {
+    display: flex;
+    margin: 0 auto;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background: var(--main-white);
+    margin: 5px;
+}
+
+
+.nav-links li a {
+    font-size: 40px;
+    text-transform: uppercase;      
+}
+
+.nav-links.open {
+    clip-path: circle(1600px at 2% -35%);
+    -webkit-clip-path: circle(1600px at 2% -35%);
+}
+
+#backbutton  {
+    list-style: none;
+    color: var(--main-blue);
+    background-color: var(--main-white);
+    text-decoration: none;
+    border: 2px solid var(--main-blue);
+    border-radius: 7px;
+    padding: 7px 9px 7px 9px;
+    cursor: pointer;
+}
+
+.index_welcome {
+    margin-bottom: 10px;
+}
+
+.index_bio {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 400px;
+    font-size: 20px;
+}
+
+    /*--------------------INDEX--------------------*/
+
+.index_welcome {
+    text-align: center;
+}
+
+    /*--------------------LOADER FOR ALL PAGES--------------------*/
+
+.loader_container {
+    display: flex;
+    justify-content: center;
+}
+
+.loader > div {
+    width: 3em;
+    height: 3em;
+    background-color: var(--main-blue);
+    border-radius: 50%;
+    display: inline-block;
+    animation: 1.5s bounce infinite ease-in-out both;
+  }
+
+  .loader {
+      margin-top: 100px;
+      height: 600px;
+  }
+
+.loader .dots1{
+    animation-delay: -0.30s;
+}
+
+.loader .dots2{
+    animation-delay: -0.15s;
+}
+  
+
+@keyframes bounce {
+    0%,80%,100%{
+        transform: scale(0);
     }
-    
+    40% {
+        transform: scale(1);
+    }
+}
+
+
+
+@media screen and (min-width:1024px) {
+
+
+
     .nav-links {
         display: flex;
         list-style: none;
-        width: 70%;
+        width: 30%;
         height: 100%;
         justify-content: space-around;
         align-items: center;
@@ -63,63 +169,29 @@ nav {
     .nav-links li a {
         color: var(--main-white);
         text-decoration: none;
-        font-size: 25px;
+        font-size: 40px;
     }
+
+    .nav-links li a:hover {
+        transition: ease-in-out 0,5s;
+        border: 5px solid white;
+        padding: 10px;
+    }
+
+    .on-Page {
+        background-color: var(--main-white);
+        padding: 15px;
+        color: var(--main-blue) !important;
+    }
+
 }
 
-@media screen and (max-width:768px) {
 
     /*--------------------NAV BAR FOR ALL PAGES--------------------*/
 
-    .logo {
-        display: flex;
-        margin: 0 auto;
-    }
-
-    .line {
-        width: 30px;
-        height: 3px;
-        background: var(--main-white);
-        margin: 5px;
-    }
-
-    nav {
-        position: relative;
-        height: 100%;
-    }
-
-    .hamburger_menu {
-        position: absolute;
-        cursor: pointer;
-        padding: 20px;
-        z-index: 2;
-    }
-
-    .nav-links {
-        position: fixed;
-        background: var(--main-blue);
-        height: 100vh;
-        width: 100%;
-        flex-direction: column;
-        clip-path: circle(100px at 2% -35%);
-        -webkit-clip-path: circle(100px at 2% -35%);
-        transition: all 1.5s ease-out;
-    }
-
-    .nav-links li a {
-        font-size: 40px;
-        text-transform: uppercase;      
-    }
-
-    .nav-links.open {
-        clip-path: circle(1500px at 2% -35%);
-        -webkit-clip-path: circle(1500px at 2% -35%);
-    }
 
     /*--------------------INDEX--------------------*/
 
-    html {
-    }
 
     /*--------------------BLOG POSTS--------------------*/
 
@@ -128,7 +200,6 @@ nav {
     .aboutme_form {
         background: var(--main-grey);
         border-radius: 10px;
-        height: 100%;
     }
 
     .aboutme_form h1 {
@@ -139,17 +210,18 @@ nav {
 
     .aboutme_form p {
         text-align: center;
-        margin: 20px;
+        margin: 10px;
+        font-size: 20px;
         padding-bottom: 20px;
+        padding-top: 20px;
     }
 
     .about_border {
         border-bottom: 2px solid black;
-        margin: 10px;
     }
 
     #aboutme_gif {
-        width: 20%;
+        width: 15%;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -249,5 +321,4 @@ nav {
         max-width: 80%;
         margin: 0 auto;
     }
-}
-
+        

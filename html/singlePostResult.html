@@ -8,32 +8,34 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/posts.css">
     <script src="https://kit.fontawesome.com/cafca22d75.js" crossorigin="anonymous"></script>
-    <title>Blogposts - Posts</title>
+    <title>Blogposts - SingleResult</title>
 </head>
 <body>
 
     <header>
         <nav>
-            <div class="hamburger_menu" aria-hidden="true">
+            <div class="hamburger_menu">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
             <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="/html/blogpage.html" class="on-Page">Blogposts</a></li>
+                <li><a href="/html/blogpage.html">Blogposts</a></li>
                 <li><a href="/html/about.html">About</a></li>
                 <li><a href="/html/contact.html">Contact</a></li>
             </ul>
-            <a href="../index.html">
-                <img src="/images/Eple'sBlog.png" class="logo" aria-label="Eple's blog logo, eple's blog">
-            </a>
+            <div class="logo_container">
+                <a href="../index.html">
+                    <img src="/images/Eple'sBlog.png" class="logo" aria-label="Eple's blog logo, eple's blog">
+                </a>
+            </div>
         </nav>
     </header>
-
+    
     <main>
         <button id="backbutton"><i class="fas fa-arrow-left"></i></button>
-        <div class="allPostResults">
+        <div class="singlePostResult">
             <div class="loader_container">
                 <div class="loader">
                     <div class="dots1"></div>
@@ -72,6 +74,6 @@
     </footer>
 
     <script src="../js/hamburger.js"></script>
-    <script src="../js/allPosts.js"></script>
+    <script src="../js/singlePost.js"></script>
 </body>
 </html>
