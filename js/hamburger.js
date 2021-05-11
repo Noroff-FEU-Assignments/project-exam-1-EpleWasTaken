@@ -12,5 +12,5 @@ hamburger_menu.addEventListener("click", () => {
 
 document.getElementById("backbutton").addEventListener("click", () => {
     history.back();
-  });
+});
 
