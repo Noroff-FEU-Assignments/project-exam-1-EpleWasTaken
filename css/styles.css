@@ -83,7 +83,7 @@ nav {
     -webkit-clip-path: circle(1600px at 2% -35%);
 }
 
-#backbutton  {
+#backbutton {
     list-style: none;
     color: var(--main-blue);
     background-color: var(--main-white);
@@ -93,6 +93,7 @@ nav {
     padding: 7px 9px 7px 9px;
     cursor: pointer;
 }
+
 
 .index_welcome {
     margin-bottom: 10px;
@@ -105,11 +106,117 @@ nav {
     font-size: 20px;
 }
 
+.on-Page {
+    background-color: var(--main-white);
+    padding: 15px;
+    color: var(--main-blue) !important;
+}
+
     /*--------------------INDEX--------------------*/
 
 .index_welcome {
     text-align: center;
 }
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carousel {
+    border: 2px solid #ccc;
+    height:400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    height: 100%;
+    display: flex;
+    width: 400%;
+    transition: all 0.3s;
+}
+
+.slider section {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.controls .arrow {
+    position: absolute;
+    top: 45%;
+}
+
+.arrow.left {
+    left: 10px;
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    background: transparent;
+    color: white;
+}
+
+.arrow.right {
+    right: 10px;
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    background: transparent;
+    color: white;
+}
+
+.blog_posts {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .index_post_img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+    /*--------------------ABOUT ME--------------------*/
+
+    .aboutme_form {
+        background: var(--main-grey);
+        border-radius: 10px;
+    }
+
+    .aboutme_form h1 {
+        text-align: center;
+        padding-top: 20px;
+        margin: 20px;
+    }
+
+    .aboutme_form p {
+        text-align: center;
+        margin: 10px;
+        font-size: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .about_border {
+        border-bottom: 2px solid black;
+    }
+
+    #aboutme_gif {
+        width: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+
+
 
     /*--------------------LOADER FOR ALL PAGES--------------------*/
 
@@ -119,8 +226,8 @@ nav {
 }
 
 .loader > div {
-    width: 3em;
-    height: 3em;
+    width: 2em;
+    height: 2em;
     background-color: var(--main-blue);
     border-radius: 50%;
     display: inline-block;
@@ -128,16 +235,28 @@ nav {
   }
 
   .loader {
-      margin-top: 100px;
+      margin-top: 180px;
       height: 600px;
   }
 
 .loader .dots1{
-    animation-delay: -0.30s;
+    animation-delay: -0.50s;
 }
 
 .loader .dots2{
-    animation-delay: -0.15s;
+    animation-delay: -0.40s;
+}
+
+.loader .dots3{
+    animation-delay: -0.30s;
+}
+
+.loader .dots4{
+    animation-delay: -0.20s;
+}
+
+.loader .dots5{
+    animation-delay: -0.10s;
 }
   
 
@@ -153,8 +272,6 @@ nav {
 
 
 @media screen and (min-width:1024px) {
-
-
 
     .nav-links {
         display: flex;
@@ -184,6 +301,10 @@ nav {
         color: var(--main-blue) !important;
     }
 
+    #backbutton {
+        display: none;
+    }
+
 }
 
 
@@ -195,17 +316,27 @@ nav {
 
     /*--------------------BLOG POSTS--------------------*/
 
+    .allPostResults {
+        display: flex;
+        flex-direction: column;
+    }
+
     /*--------------------ABOUT ME--------------------*/
 
     .aboutme_form {
-        background: var(--main-grey);
-        border-radius: 10px;
+        max-width: 800px;
+        margin: 0 auto;
     }
 
     .aboutme_form h1 {
         text-align: center;
         padding-top: 20px;
-        margin: 20px;
+        margin-top: 80px;
+    }
+
+    .aboutme_form h2 {
+        text-align: center;
+        margin-bottom: 20px;
     }
 
     .aboutme_form p {
@@ -214,18 +345,14 @@ nav {
         font-size: 20px;
         padding-bottom: 20px;
         padding-top: 20px;
-    }
-
-    .about_border {
-        border-bottom: 2px solid black;
+        max-width: 600px;
+        margin: 0 auto;
     }
 
     #aboutme_gif {
         width: 15%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    } 
+    }
+
 
 
 
@@ -273,10 +400,12 @@ nav {
 
     footer {
         background-color: var(--main-blue);
+        margin-top: 100px;
     }
 
     .footer_social_container {
-        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
         text-align: center;
         padding-top: 20px;
         padding-bottom: 10px;
@@ -295,7 +424,8 @@ nav {
     }
 
     .footer_legal_container {
-        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
         text-align: center;
         padding-bottom: 20px;
     }
@@ -314,6 +444,7 @@ nav {
     }
 
     .copyright {
+        max-width: 600px;
         font-size: 1.8vh;
         font-weight: 600;
         text-align: center;

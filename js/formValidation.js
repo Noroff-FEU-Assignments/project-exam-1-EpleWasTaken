@@ -1,6 +1,6 @@
 const form = document.querySelector("#contact_form");
 
-const formSent = document.getElementById("submitF");
+const submitForm = document.getElementById("submitF");
 
 const name = document.querySelector("#name");
 const nameError = document.querySelector("#nameError");
@@ -44,7 +44,7 @@ function  validateForm(event) {
     
 }
 
-form.addEventListener("submit", validateForm);
+form.addEventListener("submitForm", validateForm);
 
 
 function checkLength(value, len) {
@@ -62,14 +62,15 @@ function validateEmail(email) {
 }
 
 
-const formSent = document.getElementById("submitF");
 
-formSent.addEventListener("click", () => {
-    if( === true) {
-        formSent.innerHTML = `Form sent`;
-        formSent.style.backgroundColor = "rgb(70, 255, 70)";
-    } else {
-        formSent.innerHTML = `Check error(s)`;
-        formSent.style.backgroundColor = "red";
-    }
-});
+// const formSent = document.getElementById("submitF");
+
+// formSent.addEventListener("click", () => {
+//     if( === true) {
+//         formSent.innerHTML = `Form sent`;
+//         formSent.style.backgroundColor = "rgb(70, 255, 70)";
+//     } else {
+//         formSent.innerHTML = `Check error(s)`;
+//         formSent.style.backgroundColor = "red";
+//     }
+// });

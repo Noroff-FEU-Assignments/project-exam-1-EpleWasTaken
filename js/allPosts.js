@@ -13,7 +13,7 @@ async function fetchAllPosts() {
         allPostsResponse.forEach(function (post) {
             allPosts.innerHTML += `<div class="post_card">
                                     <a href="/html/singlePostResult.html?id=${post.id}">
-                                    <img src="${post.images[0].thumbnail}" class="post_img">
+                                    <img src="${post.images[0].src}" class="post_img">
                                     </a>
                                     <h2 class="post_name">${post.name}</h2>
                                     <button onclick="window.location='/html/singlePostResult.html?id=${post.id}'" id="view_post">View Post</button>

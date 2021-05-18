@@ -4,121 +4,125 @@
     padding: 0;
 }
 
-
-
-@media screen and (max-width: 1024px) {
-    
+#contact_form {
+    margin-bottom: 50px;
 }
 
-@media screen and (max-width: 768px){
+.form_container h1 {
+    text-align: center;
+}
 
-    #contact_form {
-        margin-bottom: 50px;
-    }
+.form_container h2 {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
 
-    .form_container h1 {
-        text-align: center;
-    }
+.form_container h3 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
-    .form_container h2 {
-        margin-top: 10px;
-        text-align: center;
-        margin-bottom: 10px;
-        font-size: 20px;
-    }
+.githubContact {
+    color: var(--main-github);
+    font-size: 40px;
+}
 
-    .form_container h3 {
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+.discordContact {
+    color: var(--main-discord);
+    font-size: 40px;
+}
 
-    .githubContact {
-        color: var(--main-github);
-        font-size: 40px;
-    }
+.twitterContact {
+    color: var(--main-twitter);
+    font-size: 40px;
+}
 
-    .discordContact {
-        color: var(--main-discord);
-        font-size: 40px;
-    }
+.contact_form_social {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 600px;
+    list-style: none;
+    margin-top: 20px;
+}
 
-    .twitterContact {
-        color: var(--main-twitter);
-        font-size: 40px;
+.social_border {
+    border-bottom: 1px black solid;
+}
+
+form {
+    padding: 20px;
+    max-width: 600px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: var(--main-grey);
+    border-radius: 20px;
+}
+
+input[type="text"] {
+    height: 30px;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+textarea {
+    height: 80px;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+label {
+    display: block;
+    color: var(--main-black);
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+input.message {
+    height: 100px;
+}
+
+#submitF {
+    margin-top: 20px;
+    color: var(--main-black);
+    background: var(--main-blue);
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    font-size:20px
+}
+
+.formError {
+    display: none;
+    color: var(--main-red);
+    border: 1px solid rgb(255, 0, 0);
+    background-color: rgb(255, 177, 177);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .form_container {
+        max-width: 600px;
+        margin: 0 auto;
     }
 
     .contact_form_social {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        list-style: none;
-        margin-top: 20px;
-    }
-
-    .social_border {
-        border-bottom: 1px black solid;
-    }
-    
-    form {
-        padding: 20px;
-        max-width: 600px;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        background: var(--main-grey);
-        border-radius: 20px;
-    }
-    
-    input[type="text"] {
-        height: 30px;
-        font-size: 16px;
-        border-radius: 10px;
-        width: 100%;
-        border: none;
-        outline: none;
-    }
-
-    textarea {
-        height: 80px;
-        font-size: 16px;
-        border-radius: 10px;
-        width: 100%;
-        border: none;
-        resize: none;
-        outline: none;
-    }
-    
-    label {
-        display: block;
-        color: var(--main-black);
-        font-weight: 600;
-        margin-top: 15px;
-    }
-
-    input.message {
-        height: 40px;
-    }
-    
-    #submitF {
-        margin-top: 20px;
-        color: var(--main-black);
-        background: var(--main-blue);
-        list-style: none;
-        text-decoration: none;
-        border: none;
-        height: 40px;
-        width: 100%;
-        border-radius: 10px;
-        font-size:20px
-    }
-
-    .formError {
-        display: none;
-        color: var(--main-red);
-        border: 1px solid rgb(255, 0, 0);
-        background-color: rgb(255, 177, 177);
-        border-radius: 10px;
-        margin-top: 10px;
     }
 }
