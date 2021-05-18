@@ -58,6 +58,7 @@ nav {
 
 .hamburger_menu.open {
     position: fixed;
+    z-index: 4;
 }
 
 .logo {
@@ -81,6 +82,7 @@ nav {
 .nav-links.open {
     clip-path: circle(1600px at 2% -35%);
     -webkit-clip-path: circle(1600px at 2% -35%);
+    z-index: 3;
 }
 
 #backbutton {
