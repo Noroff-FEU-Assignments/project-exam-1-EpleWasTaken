@@ -12,6 +12,7 @@ async function indexCarousel() {
 
         for(let i = 0; i < carouselResults.length; i++) {
             carousel.innerHTML +=  `<section class="blog_posts">
+                                    <h4 class="blog_title">${carouselResults[i].name}</h4>
                                     <a href="/html/singlePostResult.html?id=${carouselResults[i].id}">
                                     <img src="${carouselResults[i].images[0].src}" class="index_post_img">
                                     </a>

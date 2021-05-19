@@ -8,18 +8,23 @@
     margin-bottom: 50px;
 }
 
-.form_container h1 {
+.contact_h1 {
+    text-transform: uppercase;
     text-align: center;
+    color: var(--main-blue);
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-weight: 800;
 }
 
-.form_container h2 {
+.contact_h2 {
     margin-top: 10px;
     text-align: center;
     margin-bottom: 10px;
     font-size: 20px;
 }
 
-.form_container h3 {
+.contact_h3 {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;

@@ -97,15 +97,30 @@ nav {
 }
 
 
-.index_welcome {
-    margin-bottom: 10px;
+.index_h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--main-blue);
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-weight: 800;
+
 }
 
-.index_bio {
+.index_h2 {
     text-align: center;
-    margin: 0 auto;
-    max-width: 400px;
+    color: var(--main-blue);
+    padding-bottom: 20px;
+    font-size:20px;
+    font-weight: 800;
+}
+
+.index_h3 {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--main-blue);
     font-size: 20px;
+    font-weight: 800;
 }
 
 .on-Page {
@@ -120,14 +135,18 @@ nav {
     text-align: center;
 }
 
+.index_info{
+    text-align: center;
+}
+
 .container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
 .carousel {
-    border: 2px solid #ccc;
-    height:400px;
+    height: 400px;
+    width: 100%;
     position: relative;
     overflow: hidden;
 }
@@ -172,16 +191,28 @@ nav {
 }
 
 .blog_posts {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--main-grey);
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 80%;
 }
 
 section .index_post_img {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.blog_title {
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    color: var(--main-blue);
+    text-align: center;
+}
+
 
 
 
@@ -190,9 +221,24 @@ section .index_post_img {
     .aboutme_form {
         background: var(--main-grey);
         border-radius: 10px;
+        padding-bottom: 20px;
+        padding-top: 20px;
     }
 
-    .aboutme_form h1 {
+    .about_h1 {
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--main-blue);
+        padding-bottom: 20px;
+        font-size: 40px;
+        font-weight: 800;
+    }
+
+    .aboutme_form h2 {
+        text-align: center;
+    }
+
+    .aboutme_form h3 {
         text-align: center;
         padding-top: 20px;
         margin: 20px;
@@ -200,10 +246,8 @@ section .index_post_img {
 
     .aboutme_form p {
         text-align: center;
-        margin: 10px;
         font-size: 20px;
-        padding-bottom: 20px;
-        padding-top: 20px;
+        padding: 20px;
     }
 
     .about_border {
@@ -211,35 +255,44 @@ section .index_post_img {
     }
 
     #aboutme_gif {
-        width: 20%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        display: flex;
+        margin: 0 auto;
     } 
 
+    .aboutme_img {
+        width: 50%;
+        display: flex;
+        margin: 0 auto;
+        border-radius: 20px;
+    }
+ 
 
 
 
     /*--------------------LOADER FOR ALL PAGES--------------------*/
 
 .loader_container {
-    display: flex;
+    margin-top: 50px;
+    margin-bottom: 400px;
     justify-content: center;
+    align-items: center;
 }
 
 .loader > div {
-    width: 2em;
-    height: 2em;
+    width: 4em;
+    height: 4em;
     background-color: var(--main-blue);
     border-radius: 50%;
     display: inline-block;
     animation: 1.5s bounce infinite ease-in-out both;
+    display: block;
   }
 
-  .loader {
-      margin-top: 180px;
-      height: 600px;
-  }
+.loader {
+    margin-top: 180px;
+    margin: 0 auto;
+    width: 100%;
+}
 
 .loader .dots1{
     animation-delay: -0.50s;
@@ -278,7 +331,7 @@ section .index_post_img {
     .nav-links {
         display: flex;
         list-style: none;
-        width: 30%;
+        width: 29%;
         height: 100%;
         justify-content: space-around;
         align-items: center;
@@ -317,6 +370,15 @@ section .index_post_img {
 
 
     /*--------------------BLOG POSTS--------------------*/
+
+    .blogpage_h1 {
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--main-blue);
+        padding-bottom: 20px;
+        font-size: 40px;
+        font-weight: 800;
+    }
 
     .allPostResults {
         display: flex;
