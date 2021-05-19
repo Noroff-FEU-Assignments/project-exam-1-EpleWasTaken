@@ -155,7 +155,7 @@ nav {
     height: 100%;
     display: flex;
     width: 400%;
-    transition: all 0.3s;
+    transition: all 1s;
 }
 
 .slider section {
@@ -279,8 +279,8 @@ section .index_post_img {
 }
 
 .loader > div {
-    width: 4em;
-    height: 4em;
+    width: 3em;
+    height: 3em;
     background-color: var(--main-blue);
     border-radius: 50%;
     display: inline-block;
@@ -371,19 +371,6 @@ section .index_post_img {
 
     /*--------------------BLOG POSTS--------------------*/
 
-    .blogpage_h1 {
-        text-transform: uppercase;
-        text-align: center;
-        color: var(--main-blue);
-        padding-bottom: 20px;
-        font-size: 40px;
-        font-weight: 800;
-    }
-
-    .allPostResults {
-        display: flex;
-        flex-direction: column;
-    }
 
     /*--------------------ABOUT ME--------------------*/
 

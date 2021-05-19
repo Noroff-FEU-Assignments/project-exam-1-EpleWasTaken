@@ -30,6 +30,15 @@
     height: 100%;
 }
 
+.blogpage_h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--main-blue);
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-weight: 800;
+}
+
 .post_name {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -44,7 +53,6 @@
 }
 
 .post_paragraph {
-    display: flex;
     justify-content: center;
     margin: 10px;
 }
