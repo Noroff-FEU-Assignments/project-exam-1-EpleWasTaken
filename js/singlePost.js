@@ -26,10 +26,11 @@ fetchSinglePost();
 
 function createHTML(sPost) {
     singlePost.innerHTML = `<div class="post_card">
-                            <img src="${sPost.images[0].src}" class="post_img">
+                            <img src="${sPost.images[0].src}" class="post_img" alt="${sPost.images[0].alt}">
+                            </div>
                             <h2 class="post_name">${sPost.name}</h2>
                             ${sPost.description}
-                            </div>`;
+                            `;
 }
 
 
