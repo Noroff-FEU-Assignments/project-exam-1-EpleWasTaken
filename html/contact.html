@@ -65,9 +65,9 @@
             <div class="fullNameDiv">
                 <label>
                     Full name*
-                    <input type="text" id="Name" placeholder=" Your name..."/>
+                    <input type="text" id="name" placeholder=" Your name..."/>
                 </label>
-                <div class="formError" id="NameError">Name must be more than 5 characters </div>
+                <div class="formError" id="nameError">Name must be more than 5 characters </div>
             </div> 
 
             <div>
@@ -89,13 +89,12 @@
             <div>
                 <label>
                     Message*
-                    <input type="text" id="message" placeholder=" This is regarding..."/>
+                    <textarea rows="3" cols="3" id="message" placeholder=" This is regarding..."></textarea>
                 </label>
                 <div class="formError" id="messageError">Message must be more than 25 characters</div>
             </div>
-            
             <button type="submit" id="submitF" aria-label="Submit the form">Submit form</button>
-
+            <h4></h4>
         </form>
     </div>
 </main>
@@ -117,8 +116,8 @@
     </div>
     <div class="footer_legal_container">
         <div class="footer_legal">
-            <a href="#0" rel="noreferrer">Legal</a>
             <a href="#0" rel="noreferrer">Privacy Policy</a>
+            <a href="#0" rel="noreferrer">Legal</a>
             <a href="#0" rel="noreferrer">Terms of Service</a>
         </div>
         <div class="footer_copyright">
@@ -127,9 +126,6 @@
         </div> 
     </div>
 </footer>
-
-
-
     <script src="../js/hamburger.js"></script>
     <script src="../js/buttons.js"></script>
     <script src="../js/formValidation.js"></script>

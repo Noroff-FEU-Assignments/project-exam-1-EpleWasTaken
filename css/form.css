@@ -79,7 +79,7 @@ input[type="text"] {
 }
 
 textarea {
-    height: 80px;
+    height: 200px;
     font-size: 16px;
     border-radius: 10px;
     width: 100%;

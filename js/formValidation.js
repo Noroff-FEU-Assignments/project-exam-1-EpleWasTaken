@@ -1,8 +1,9 @@
 const form = document.querySelector("#contact_form");
 
-const submitForm = document.getElementById("submitF");
+const submitSuccess = document.querySelector("#submitF");
+const submitMessage = document.querySelector("h4");
 
-const name = document.querySelector("#name");
+const fullName = document.querySelector("#name");
 const nameError = document.querySelector("#nameError");
 
 const email = document.querySelector("#email");
@@ -17,7 +18,7 @@ const messageError = document.querySelector("#messageError");
 function  validateForm(event) {
     event.preventDefault();
 
-    if (checkLength(name.value, 5) === true) {
+    if (checkLength(fullName.value, 5) === true) {
         nameError.style.display = "none";
     } else {
         nameError.style.display = "block";
@@ -39,12 +40,27 @@ function  validateForm(event) {
         messageError.style.display = "none";
     } else {
         messageError.style.display = "block";
-    }
-
+    } 
     
-}
+    if (
+    checkLength(fullName.value, 5) &&
+    validateEmail(email.value) &&
+    checkLength(subject.value, 15) &&
+    checkLength(message.value, 25) 
+    ) {
+        submitSuccess.addEventListener("click", () => {
+            submitSuccess.innerText = "Sending...";
 
-form.addEventListener("submitForm", validateForm);
+
+            setTimeout(() => {
+                submitSuccess.innerText = "FORM SENT";
+                submitSuccess.style.fontWeight = "600"
+                submitSuccess.style.backgroundColor = "#2FFF60";
+            }, 4000);
+        });
+    }
+}
+form.addEventListener("submit", validateForm);
 
 
 function checkLength(value, len) {

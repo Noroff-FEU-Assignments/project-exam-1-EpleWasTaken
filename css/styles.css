@@ -14,7 +14,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-    font-display: optional
 }
 
 main {
@@ -54,7 +53,7 @@ nav {
     position: absolute;
     cursor: pointer;
     padding: 20px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .hamburger_menu.open {
@@ -84,7 +83,7 @@ nav {
 .nav-links.open {
     clip-path: circle(1600px at 2% -35%);
     -webkit-clip-path: circle(1600px at 2% -35%);
-    z-index: 3;
+    z-index: 1;
 }
 
 #backbutton {
@@ -96,6 +95,7 @@ nav {
     border-radius: 7px;
     padding: 7px 9px 7px 9px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 
@@ -272,25 +272,22 @@ section .index_post_img {
 .loader_container {
     margin-top: 50px;
     margin-bottom: 400px;
-    justify-content: center;
-    align-items: center;
 }
 
 .loader > div {
-    width: 3em;
-    height: 3em;
+    width: 4em;
+    height: 4em;
     background-color: var(--main-blue);
     border-radius: 50%;
-    display: inline-block;
     animation: 1.5s bounce infinite ease-in-out both;
-    display: block;
+    margin: 0 auto;
   }
 
 .loader {
-
     margin-top: 180px;
     margin: 0 auto;
     width: 100%;
+    height: 1000px;
 }
 
 .loader .dots1{
@@ -330,7 +327,7 @@ section .index_post_img {
     .nav-links {
         display: flex;
         list-style: none;
-        width: 29%;
+        width: 35%;
         height: 100%;
         justify-content: space-around;
         align-items: center;
@@ -358,6 +355,7 @@ section .index_post_img {
     #backbutton {
         display: none;
     }
+
 
 
     /*--------------------NAV BAR FOR ALL PAGES--------------------*/
