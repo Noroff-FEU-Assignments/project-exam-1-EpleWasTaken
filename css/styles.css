@@ -144,17 +144,21 @@ nav {
 .container {
     width: 80%;
     margin: 0 auto;
+    height: 100%;
 }
 
 .carousel {
+    height: 500px;
+    width: 100%;
     position: relative;
     overflow: hidden;
 }
 
 .slider {
+    height: 100%;
     display: flex;
     width: 800%;
-    transition: all 0.1s;
+    transition: all 1s;
 }
 
 .slider section {
