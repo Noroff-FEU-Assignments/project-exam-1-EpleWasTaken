@@ -21,6 +21,9 @@ async function indexCarousel() {
                                     <button onclick="window.location='/html/singlePost.html?id=${carouselResults[i].id}'" id="view_post">View Post</button>
                                     </section>
                                     `;
+                                    if (i === 7) {
+                                        break;
+                                    };
         }
 
     } catch (error) {
