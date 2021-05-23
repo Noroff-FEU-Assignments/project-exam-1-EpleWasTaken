@@ -101,7 +101,7 @@ input.message {
 
 #submitF {
     margin-top: 20px;
-    color: var(--main-black);
+    color: white;
     background: var(--main-blue);
     list-style: none;
     text-decoration: none;

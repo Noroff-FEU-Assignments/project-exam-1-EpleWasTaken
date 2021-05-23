@@ -15,6 +15,8 @@ const subjectError = document.querySelector("#subjectError");
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
 
+// Form validation
+
 function  validateForm(event) {
     event.preventDefault();
 
@@ -42,6 +44,8 @@ function  validateForm(event) {
         messageError.style.display = "block";
     } 
     
+    // Checks if all values are true, have to click twice(not sure why)
+
     if (
     checkLength(fullName.value, 5) &&
     validateEmail(email.value) &&
@@ -63,6 +67,8 @@ function  validateForm(event) {
 form.addEventListener("submit", validateForm);
 
 
+// Check length of name, subject and message
+
 function checkLength(value, len) {
     if (value.trim().length > len) {
         return true;
@@ -71,22 +77,10 @@ function checkLength(value, len) {
     }
 }
 
+// Check the regex for email
+
 function validateEmail(email) {
     const regEx = /\S+@\S+\.\S+/;
     const patternTest = regEx.test(email);
     return patternTest;
 }
-
-
-
-// const formSent = document.getElementById("submitF");
-
-// formSent.addEventListener("click", () => {
-//     if( === true) {
-//         formSent.innerHTML = `Form sent`;
-//         formSent.style.backgroundColor = "rgb(70, 255, 70)";
-//     } else {
-//         formSent.innerHTML = `Check error(s)`;
-//         formSent.style.backgroundColor = "red";
-//     }
-// });

@@ -8,6 +8,8 @@ const id = params.get("id");
 
 const url = "https://project-exam1-cms.svanevik.one/wp-json/wc/store/products/" + id;
 
+// Calling the API
+
 async function fetchSinglePost() {
     try {
         const fetchResponse = await fetch(url);
@@ -24,7 +26,7 @@ async function fetchSinglePost() {
 
 fetchSinglePost();
 
-
+// Creates the html fetched from the API
 
 function createHTML(sPost) {
     singlePost.innerHTML = `<div class="post_card">
@@ -40,6 +42,7 @@ function createHTML(sPost) {
                             </div>`;
 
 
+    // Modal for all images on the single blog page
 
     var modal_container = document.getElementById("modal_container");
     var open_image = document.getElementById("image_modal");
@@ -48,6 +51,8 @@ function createHTML(sPost) {
         modal_container.style.display = "block";
         modal_image.src = this.src;
     };
+
+    // Closes the modal opened on all single blog pages
 
     var span = document.getElementsByClassName("close_modal")[0];
 
@@ -64,6 +69,8 @@ function createHTML(sPost) {
     // Change the title of each post
 
     document.title = "Eple's Blog" + " " + "|" + " " + sPost.name;
+
+    // Change the innerHTML of the single blogpage
 
     document.getElementById("sp_h1").innerHTML = "Welcome to the" + " " + sPost.name + " " + "post";
 }

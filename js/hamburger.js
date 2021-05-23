@@ -3,6 +3,8 @@ const navLinks = document.querySelector(".nav-links");
 const links = document.querySelector(".nav-links li");
 const backbutton = document.getElementById("backbutton")
 
+// Opens and closes hamburger menu
+
 hamburger_menu.addEventListener("click", () => {
     navLinks.classList.toggle("open");
 });

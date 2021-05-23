@@ -2,6 +2,8 @@ const apiURL = "https://project-exam1-cms.svanevik.one/wp-json/wc/store/products
 const allPosts = document.querySelector(".allPostResults");
 const moreBtn = document.querySelector("#more_button");
 
+// Calling the API
+
 async function fetchAllPosts() {
     try {
         const allPostsFetch = await fetch(apiURL);
@@ -39,6 +41,8 @@ async function fetchAllPosts() {
     } catch(error) {
         (error)
     }
+
+    // Show more posts
 
     moreBtn.addEventListener("click", showMorePosts);
 }

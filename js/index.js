@@ -3,6 +3,7 @@
 const url = "https://project-exam1-cms.svanevik.one/wp-json/wc/store/products?category=18";
 const carousel = document.querySelector(".slider");
 
+// Calling the API
 
 async function indexCarousel() {
     try {
@@ -44,11 +45,14 @@ const rightArrow = document.querySelector(".right");
 
 var sectionIndex = 0;
 
+// Left arrow click
 
 leftArrow.addEventListener("click", function() {
     sectionIndex = (sectionIndex > 0) ? sectionIndex - 1 : 0;
     slider.style.transform = 'translate(' + (sectionIndex) * -12.5 + '%)';
 });
+
+// Right arrow click
 
 rightArrow.addEventListener("click", function() {
     sectionIndex = (sectionIndex < 4) ? sectionIndex + 1 : 0;
