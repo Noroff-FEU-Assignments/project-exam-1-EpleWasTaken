@@ -24,6 +24,8 @@ async function fetchSinglePost() {
 
 fetchSinglePost();
 
+
+
 function createHTML(sPost) {
     singlePost.innerHTML = `<div class="post_card">
                                     <img class="post_img" id="image_modal" src="${sPost.images[0].src}" alt="${sPost.images[0].alt}">
@@ -58,4 +60,8 @@ function createHTML(sPost) {
             modal_container.style.display = "none"
         }
     };
+
+    // Change the title of each post
+
+    document.title = "Eple's Blog" + " " + "|" + " " + sPost.name;
 }

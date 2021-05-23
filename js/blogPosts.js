@@ -1,8 +1,6 @@
-const apiURL = "https://project-exam1-cms.svanevik.one/wp-json/wc/store/products?category=18";
+const apiURL = "https://project-exam1-cms.svanevik.one/wp-json/wc/store/products?per_page=12";
 const allPosts = document.querySelector(".allPostResults");
 const moreBtn = document.querySelector("#more_button");
-
-
 
 async function fetchAllPosts() {
     try {

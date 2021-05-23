@@ -139,6 +139,8 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+    /*--------------------IMAGE MODAL--------------------*/
+
 #modal_container {
     display: none;
     position: fixed;
@@ -170,7 +172,6 @@
     color: var(--main-blue);
     font-size: 40px;
 }
-
 
     /*--------------------MEDIA QUERIE FOR SCREEN GREATER THEN 1024px WIDTH--------------------*/
 
