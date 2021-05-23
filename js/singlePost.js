@@ -64,4 +64,6 @@ function createHTML(sPost) {
     // Change the title of each post
 
     document.title = "Eple's Blog" + " " + "|" + " " + sPost.name;
+
+    document.getElementById("sp_h1").innerHTML = "Welcome to the" + " " + sPost.name + " " + "post";
 }

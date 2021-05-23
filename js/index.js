@@ -18,9 +18,8 @@ async function indexCarousel() {
                                     <img src="${carouselResults[i].images[0].src}" class="index_post_img" alt="${carouselResults[i].images[0].alt}">
                                     </a>
                                     <h4 class="blog_title">${carouselResults[i].name}</h4>
-                                    <button onclick="window.location='/html/singlePost.html?id=${carouselResults[i].id}'" id="view_post">View Post</button>
-                                    </section>
-                                    `;
+                                    <button onclick="window.location='/html/singlePost.html?id=${carouselResults[i].id}'" id="view_post_index">View Post</button>
+                                    </section>`;
                                     if (i === 7) {
                                         break;
                                     };

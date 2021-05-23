@@ -62,6 +62,15 @@
     font-weight: 400;
 }
 
+#sp_h1 {
+    padding-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 30px;
+    color: var(--main-blue);
+}
+
     /*------------------- ALL POSTS--------------------*/
 
 .allPostResults {
@@ -112,6 +121,24 @@
     background-color: var(--main-blue);
     border-radius: 0px 0px 10px 10px;
     margin-top: 6px;
+    color: white;
+}
+
+#view_post_index {
+    display: block;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 600;
+    height: 40px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    list-style: none;
+    text-decoration: none;
+    background-color: var(--main-blue);
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 6px;
 }
 
 .button_container {
@@ -121,6 +148,7 @@
 
 #more_button {
     display: block;
+    color: white;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 10px;
